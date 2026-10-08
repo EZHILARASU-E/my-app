@@ -9,5 +9,5 @@ test('GET / returns a greeting', async () => {
   const body = await res.text();
   server.close();
   assert.strictEqual(res.status, 200);
-  assert.match(body, /Nope/);
+  assert.match(body, /Hello/);
 });
