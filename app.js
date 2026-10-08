@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => res.send('Hello CI/CD Pipeline '));
+app.get('/', (req, res) => res.send('Hello CI/CD Pipeline v2'));
 
 // Only start the server when run directly (so tests can import the app)
 if (require.main === module) {
